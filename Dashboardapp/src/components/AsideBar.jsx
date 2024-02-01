@@ -35,7 +35,6 @@ function AsideBar() {
             <a className="text-[#7C8DB5] flex  font-semibold" href="#">
               <img className="mr-3" src={ordersIconAside} alt="" />
               Orders
-              <img className="ml-[4.5rem]" src={shape} alt="" />
             </a>
             <a className="text-[#7C8DB5]  flex  font-semibold" href="#">
               <img className="mr-3" src={checkoutAside} alt="" />
