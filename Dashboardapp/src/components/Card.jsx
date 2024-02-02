@@ -35,7 +35,9 @@ function Card({ number, title, amount, percentage }) {
           <img src={percentage > 0 ? riseIcon : fallIcon} alt="rise" />
           <span className="text-[#7C8DB5] text-sm ">{amount}</span>
           <span className="text-[#7C8DB5] text-sm">
-            {"+" + percentage + "% this week"}
+            {percentage > 0
+              ? "+" + percentage + "% this week"
+              : +percentage + "% this week"}
           </span>
         </div>
       </div>

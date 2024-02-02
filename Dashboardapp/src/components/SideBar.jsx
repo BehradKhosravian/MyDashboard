@@ -10,6 +10,7 @@ import shape from "../assets/icon/shape.svg";
 import helpCenterIcon from "../assets/icon/helpCenterIcon.svg";
 import contactUsIcon from "../assets/icon/contactUsIcon.svg";
 import logOutIcon from "../assets/icon/logOutIcon.svg";
+import { NavLink } from "react-router-dom";
 function AsideBar() {
   return (
     <>
@@ -20,30 +21,39 @@ function AsideBar() {
         </div>
         <div className="aside-mainpart px-12  border-r h-screen">
           <div className="mt-10 space-y-5">
-            <a className="text-[#7C8DB5] flex  font-semibold" href="#">
+            <NavLink to="/" className="text-[#7C8DB5] flex  font-semibold">
               <img className="mr-3" src={OverviewIcon} alt="overviewIcon" />
               Overview
-            </a>
-            <a
-              className="text-[#7C8DB5] flex font-semibold justify-between "
-              href="#"
+            </NavLink>
+            <NavLink
+              to="Product"
+              className="text-[#7C8DB5] flex font-semibold "
             >
               <img className="mr-3" src={productionIconAside} alt="" />
               Product
-              <img className="ml-16" src={shape} alt="" />
-            </a>
-            <a className="text-[#7C8DB5] flex  font-semibold" href="#">
+            </NavLink>
+            <a href="#"></a>
+            <NavLink
+              to="/Orders"
+              className="text-[#7C8DB5] flex  font-semibold"
+            >
               <img className="mr-3" src={ordersIconAside} alt="" />
               Orders
-            </a>
-            <a className="text-[#7C8DB5]  flex  font-semibold" href="#">
+            </NavLink>
+            <NavLink
+              to="/Checkout"
+              className="text-[#7C8DB5]  flex  font-semibold"
+            >
               <img className="mr-3" src={checkoutAside} alt="" />
               Checkout
-            </a>
-            <a className="text-[#7C8DB5] flex  font-semibold" href="#">
+            </NavLink>
+            <NavLink
+              to="/Setting"
+              className="text-[#7C8DB5]  flex  font-semibold"
+            >
               <img className="mr-3" src={settingAside} alt="" />
               Setting
-            </a>
+            </NavLink>
           </div>
         </div>
         <div className="aside-footer pt-48 pb-10 px-12  border-r  space-y-5">
