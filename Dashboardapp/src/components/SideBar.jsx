@@ -6,7 +6,7 @@ import productionIconAside from "../assets/icon/productIconAside.svg";
 import ordersIconAside from "../assets/icon/ordersIconAside.svg";
 import checkoutAside from "../assets/icon/checkoutAside.svg";
 import settingAside from "../assets/icon/settingAside.svg";
-import shape from "../assets/icon/shape.svg";
+// import shape from "../assets/icon/shape.svg";
 import helpCenterIcon from "../assets/icon/helpCenterIcon.svg";
 import contactUsIcon from "../assets/icon/contactUsIcon.svg";
 import logOutIcon from "../assets/icon/logOutIcon.svg";
@@ -57,18 +57,25 @@ function AsideBar() {
           </div>
         </div>
         <div className="aside-footer pt-48 pb-10 px-12  border-r  space-y-5">
-          <a className="text-[#7C8DB5] flex  font-semibold" href="">
+          <NavLink
+            to="/Helpcenter"
+            className="text-[#7C8DB5] flex  font-semibold"
+          >
             <img className="mr-3" src={helpCenterIcon} alt="helpCenterIcon" />
             Help Centre
-          </a>
-          <a className="text-[#7C8DB5] flex  font-semibold" href="">
+          </NavLink>
+          <NavLink
+            to="/Contactus"
+            className="text-[#7C8DB5] flex  font-semibold"
+            href=""
+          >
             <img className="mr-3" src={contactUsIcon} alt="contactUsIcon" />
             Contact us
-          </a>
-          <a className="text-[#FF3B30] flex  font-semibold" href="">
+          </NavLink>
+          <NavLink to="/Logout" className="text-[#FF3B30] flex  font-semibold">
             <img className="mr-3" src={logOutIcon} alt="contactUsIcon" />
             Log out
-          </a>
+          </NavLink>
         </div>
       </div>
     </>
