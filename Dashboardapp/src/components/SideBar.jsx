@@ -26,7 +26,7 @@ function AsideBar() {
               Overview
             </NavLink>
             <NavLink
-              to="Product"
+              to="product"
               className="text-[#7C8DB5] flex font-semibold "
             >
               <img className="mr-3" src={productionIconAside} alt="" />
@@ -34,21 +34,21 @@ function AsideBar() {
             </NavLink>
             <a href="#"></a>
             <NavLink
-              to="/Orders"
+              to="/orders"
               className="text-[#7C8DB5] flex  font-semibold"
             >
               <img className="mr-3" src={ordersIconAside} alt="" />
               Orders
             </NavLink>
             <NavLink
-              to="/Checkout"
+              to="/checkout"
               className="text-[#7C8DB5]  flex  font-semibold"
             >
               <img className="mr-3" src={checkoutAside} alt="" />
               Checkout
             </NavLink>
             <NavLink
-              to="/Setting"
+              to="/setting"
               className="text-[#7C8DB5]  flex  font-semibold"
             >
               <img className="mr-3" src={settingAside} alt="" />
@@ -58,14 +58,14 @@ function AsideBar() {
         </div>
         <div className="aside-footer pt-48 pb-10 px-12  border-r  space-y-5">
           <NavLink
-            to="/Helpcenter"
+            to="/helpcenter"
             className="text-[#7C8DB5] flex  font-semibold"
           >
             <img className="mr-3" src={helpCenterIcon} alt="helpCenterIcon" />
             Help Centre
           </NavLink>
           <NavLink
-            to="/Contactus"
+            to="/contactus"
             className="text-[#7C8DB5] flex  font-semibold"
             href=""
           >

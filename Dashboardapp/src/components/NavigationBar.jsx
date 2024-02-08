@@ -13,7 +13,7 @@ function NavigationBar({ userName }) {
     <div className="flex flex-col w-full">
       <div className="header-container flex justify-between">
         <div className="py-8 px-6">
-          <h1 className=" font-semibold text-2xl 	">
+          <h1 className=" font-semibold text-xs  lg:text-2xl 	">
             Welcome Back , {userName}
           </h1>
           <p className=" text-[#7C8DB5] text-xs leading-8	 ">

@@ -1,24 +1,28 @@
+// import Order from "./Order/Order";
+// import tableIcon from "../../assets/icon/tabelIcon.svg";
+// import Order from "./Order/Order";
+// import Pagination from "@mui/material/Pagination";
+
 import Order from "./Order/Order";
+
+// border-[#E6EDFF]
 function Orders() {
   return (
-    <div className="orders-container px-6 w-full   ">
-      <div className=" border p-6  border-[#E6EDFF] rounded-xl ">
-        <div className="orders-header ">
-          <h1 className="font-semibold text-2xl mb-10">Order List</h1>
-          <div className="orders-header-list border-b-2 border-[#E6EDFF] flex justify-around pb-4">
-            <h1>No</h1>
-            <h1>ID</h1>
-            <h1>Date</h1>
-            <h1>Customer Name</h1>
-            <h1>Location</h1>
-            <h1>Amount</h1>
-            <h1>Status Order</h1>
-            <h1>Action</h1>
-          </div>
-          <Order />
-        </div>
-      </div>
-    </div>
+    <table className="w-full text-sm lg:text-lg mx-8">
+      <thead>
+        <tr className="border-b-2 border-[#E6EDFF]">
+          <th className="px-3 py-2">No</th>
+          <th className="px-3 py-2">ID</th>
+          <th className="px-3 py-2">Date</th>
+          <th className="px-3 py-2">Customer Name</th>
+          <th className="px-3 py-2">Location</th>
+          <th className="px-3 py-2">Amount</th>
+          <th className="px-3 py-2">Status Order</th>
+          <th className="px-3 py-2">Action</th>
+        </tr>
+      </thead>
+      <Order />
+    </table>
   );
 }
 

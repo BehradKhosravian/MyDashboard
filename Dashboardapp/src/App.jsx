@@ -22,14 +22,13 @@ function App() {
           <NavigationBar userName={"Behrad Khosravian"} />
           <Routes>
             <Route path="/" element={<Overview />} />
-            <Route path="/Product" element={<Product />} />
-            <Route path="/Orders" element={<Orders />} />
-            <Route path="/Checkout" element={<Checkout />} />
-            <Route path="/Setting" element={<Setting />} />
-            <Route path="/Helpcenter" element={<HelpCenter />} />
-            <Route path="/Contactus" element={<Contactus />} />
-            <Route path="/Logout" element={<Logout />} />
-
+            <Route path="/product" element={<Product />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/setting" element={<Setting />} />
+            <Route path="/helpcenter" element={<HelpCenter />} />
+            <Route path="/contactus" element={<Contactus />} />
+            <Route path="/logout" element={<Logout />} />
             <Route path="*" element={<NoutFound />} />
           </Routes>
         </main>

@@ -1,25 +1,24 @@
 import { orderList } from "../../../Data";
 import threedots from "../../../assets/icon/threedots.svg";
+// border-[#E6EDFF]
 function Order() {
   return (
-    <div>
+    <tbody>
       {orderList.map((order) => (
-        <div className="p-4 border-b-2  border-[#E6EDFF]" key={order.id}>
-          <div className="flex justify-around ">
-            <p>{order.no}</p>
-            <p>{order.id}</p>
-            <p>{order.date}</p>
-            <p>{order.name}</p>
-            <p>{order.location}</p>
-            <p>{order.amount}</p>
-            <p>{order.status}</p>
-            <button>
-              <img src={threedots} alt="Action" />
-            </button>
-          </div>
-        </div>
+        <tr className="  border-b-2 border-[#E6EDFF] " key={order.id}>
+          <td className="p-2 align-middle text-center">{order.no}</td>
+          <td className="p-2 align-middle text-center">{order.id}</td>
+          <td className="p-2 align-middle text-center">{order.date}</td>
+          <td className="p-2 align-middle text-center">{order.name}</td>
+          <td className="p-2 align-middle text-center">{order.location}</td>
+          <td className="p-2 align-middle text-center">{order.amount}</td>
+          <td className="p-2 align-middle text-center">{order.status}</td>
+          <button className="ps-10 py-2 align-middle">
+            <img src={threedots} alt="Action" />
+          </button>
+        </tr>
       ))}
-    </div>
+    </tbody>
   );
 }
 
