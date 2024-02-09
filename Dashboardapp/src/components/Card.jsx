@@ -12,7 +12,9 @@ function Card({ number, title, amount, percentage }) {
       <div className="w-1/4 border-r border-[#E6EDFF]">
         <div className="main-report flex justify-between">
           <div>
-            <p className=" text-sm lg:text-3xl font-semibold leading-snug">{number}</p>
+            <p className=" text-sm lg:text-3xl font-semibold leading-snug">
+              {number}
+            </p>
             <p className=" text-xs lg:text-sm ">
               {title === "Refund " ? title : "Total " + title}
             </p>
@@ -28,6 +30,7 @@ function Card({ number, title, amount, percentage }) {
                   ? checkedIcon
                   : arrowrightIcon
               }
+              title={title}
             />
           </div>
         </div>

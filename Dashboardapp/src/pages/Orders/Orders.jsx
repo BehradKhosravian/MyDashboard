@@ -1,18 +1,6 @@
-// import Order from "./Order/Order";
-// import tableIcon from "../../assets/icon/tabelIcon.svg";
-// import Order from "./Order/Order";
-// import Pagination from "@mui/material/Pagination";
-
-import { useState } from "react";
-import Order from "./Order/Order";
-import { orderList } from "../../Data";
-// import Pagination from "../../components/Pagination";
-import { NavLink } from "react-router-dom";
-
 // border-[#E6EDFF]
+import Order from "./Order/Order";
 function Orders() {
-
-
   return (
     <>
       <table className="w-full text-sm lg:text-lg mx-8">
@@ -30,7 +18,6 @@ function Orders() {
         </thead>
         <Order />
       </table>
-
     </>
   );
 }

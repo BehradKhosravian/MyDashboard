@@ -10,8 +10,8 @@ function Order() {
   const lastIndex = currentPage * recordsPerPage;
   const firstIndex = lastIndex - recordsPerPage;
   const records = orderList.slice(firstIndex, lastIndex);
-  const npage = Math.ceil(orderList.length / recordsPerPage);
-  const numbers = [...Array(npage + 1).keys()].slice(1);
+  const lastPage = Math.ceil(orderList.length / recordsPerPage);
+  const numbers = [...Array(lastPage + 1).keys()].slice(1);
 
   function prePage() {
     if (currentPage !== 1) {
@@ -24,9 +24,8 @@ function Order() {
   }
 
   function nextPage() {
-    if (currentPage  !== 10) {
+    if (currentPage !== lastPage) {
       setCurrentPage(currentPage + 1);
-      console.log(currentPage);
     }
   }
 
