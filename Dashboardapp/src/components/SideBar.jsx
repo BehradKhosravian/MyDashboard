@@ -21,13 +21,16 @@ function AsideBar() {
         </div>
         <div className="aside-mainpart px-12  border-r h-screen">
           <div className="mt-10 space-y-5">
-            <NavLink to="/" className="text-[#7C8DB5] flex  font-semibold">
+            <NavLink
+              to="/"
+              className="text-[#7C8DB5] flex  font-semibold hover:text-[#347AE2]"
+            >
               <img className="mr-3" src={OverviewIcon} alt="overviewIcon" />
               Overview
             </NavLink>
             <NavLink
               to="product"
-              className="text-[#7C8DB5] flex font-semibold "
+              className="text-[#7C8DB5] flex font-semibold hover:text-[#347AE2]"
             >
               <img className="mr-3" src={productionIconAside} alt="" />
               Product
@@ -35,21 +38,21 @@ function AsideBar() {
             <a href="#"></a>
             <NavLink
               to="/orders"
-              className="text-[#7C8DB5] flex  font-semibold"
+              className="text-[#7C8DB5] flex  font-semibold hover:text-[#347AE2]"
             >
               <img className="mr-3" src={ordersIconAside} alt="" />
               Orders
             </NavLink>
             <NavLink
               to="/checkout"
-              className="text-[#7C8DB5]  flex  font-semibold"
+              className="text-[#7C8DB5]  flex  font-semibold hover:text-[#347AE2]"
             >
               <img className="mr-3" src={checkoutAside} alt="" />
               Checkout
             </NavLink>
             <NavLink
               to="/setting"
-              className="text-[#7C8DB5]  flex  font-semibold"
+              className="text-[#7C8DB5]  flex  font-semibold hover:text-[#347AE2]"
             >
               <img className="mr-3" src={settingAside} alt="" />
               Setting
@@ -59,14 +62,14 @@ function AsideBar() {
         <div className="aside-footer pt-48 pb-10 px-12  border-r  space-y-5">
           <NavLink
             to="/helpcenter"
-            className="text-[#7C8DB5] flex  font-semibold"
+            className="text-[#7C8DB5] flex  font-semibold hover:text-[#347AE2]"
           >
             <img className="mr-3" src={helpCenterIcon} alt="helpCenterIcon" />
             Help Centre
           </NavLink>
           <NavLink
             to="/contactus"
-            className="text-[#7C8DB5] flex  font-semibold"
+            className="text-[#7C8DB5] flex  font-semibold hover:text-[#347AE2]"
             href=""
           >
             <img className="mr-3" src={contactUsIcon} alt="contactUsIcon" />
