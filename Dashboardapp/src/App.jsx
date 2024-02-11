@@ -18,7 +18,7 @@ function App() {
     <>
       <div className="flex">
         <SideBar />
-        <main className=" w-4/5">
+        <main className=" w-full">
           <NavigationBar userName={"Behrad Khosravian"} />
           <Routes>
             <Route path="/" element={<Overview />} />

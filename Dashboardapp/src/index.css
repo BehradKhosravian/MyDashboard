@@ -9,3 +9,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+a.active {
+  color: #347ae2;
+}

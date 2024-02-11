@@ -11,15 +11,15 @@ import helpCenterIcon from "../assets/icon/helpCenterIcon.svg";
 import contactUsIcon from "../assets/icon/contactUsIcon.svg";
 import logOutIcon from "../assets/icon/logOutIcon.svg";
 import { NavLink } from "react-router-dom";
-function AsideBar() {
+function SideBar() {
   return (
     <>
-      <div className="aside-container flex  flex-col  w-1/6 h-screen">
-        <div className="aside-logo flex px-12 py-7 mt-2 items-center">
+      <section className="sideBar-container   flex-col  w-1/6 h-full hidden md:block">
+        <div className="sideBar-logo flex px-12 py-7 mt-2 items-center">
           <img src={logo} alt="MyDashLogo" />
           <span className="font-semibold">MyDash</span>
         </div>
-        <div className="aside-mainpart px-12  border-r h-screen">
+        <div className="sideBar-mainpart px-12  border-r ">
           <div className="mt-10 space-y-5">
             <NavLink
               to="/"
@@ -59,13 +59,13 @@ function AsideBar() {
             </NavLink>
           </div>
         </div>
-        <div className="aside-footer pt-48 pb-10 px-12  border-r  space-y-5">
+        <div className="sideBar-footer pt-48 pb-10 px-12  border-r  space-y-5">
           <NavLink
             to="/helpcenter"
             className="text-[#7C8DB5] flex  font-semibold hover:text-[#347AE2]"
           >
             <img className="mr-3" src={helpCenterIcon} alt="helpCenterIcon" />
-            Help Centre
+            Help Center
           </NavLink>
           <NavLink
             to="/contactus"
@@ -80,9 +80,9 @@ function AsideBar() {
             Log out
           </NavLink>
         </div>
-      </div>
+      </section>
     </>
   );
 }
 
-export default AsideBar;
+export default SideBar;

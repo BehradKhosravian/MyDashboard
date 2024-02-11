@@ -5,7 +5,7 @@ function Overview() {
   return (
     <div>
       <Cards />
-      <div className="flex">
+      <div className=" w-fit md:flex md:w-full">
         <AnalyticsChart />
         <EarningPieChart />
       </div>
