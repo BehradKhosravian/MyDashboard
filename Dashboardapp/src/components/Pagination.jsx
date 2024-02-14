@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 
 function Pagination({ prePage, numbers, changePage, nextPage }) {
   return (
-    <div>
-      <div className="mt-3 mb-12 ">
-        <ul className="flex justify-center">
+    <div className="mt-4">
+      <div className="mt-3 mb-12  flex justify-center">
+        <ul className="flex justify-center space-x-4 text-xs md:text-lg md:space-x-10">
           <li>
             <NavLink to="" onClick={() => prePage()}>
               Prev
