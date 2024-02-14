@@ -14,7 +14,7 @@ import { NavLink } from "react-router-dom";
 function SideBar() {
   return (
     <>
-      <section className="sideBar-container   flex-col  w-1/6 h-full hidden md:block">
+      <section className="sideBar-container   flex-col  w-1/6 h-full hidden lg:block">
         <div className="sideBar-logo flex px-12 py-7 mt-2 items-center">
           <img src={logo} alt="MyDashLogo" />
           <span className="font-semibold">MyDash</span>

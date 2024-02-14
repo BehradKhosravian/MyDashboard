@@ -48,7 +48,7 @@ function Order() {
         ))}
       </tbody>
       <div className="mt-3 mb-12 ">
-        <ul className="">
+        <ul className="flex">
           <li>
             <NavLink to="" onClick={() => prePage()}>
               Prev
