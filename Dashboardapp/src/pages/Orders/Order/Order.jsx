@@ -1,34 +1,7 @@
-import { orderList } from "../../../Data";
 import threedots from "../../../assets/icon/threedots.svg";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 // border-[#E6EDFF]
-function Order() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const recordsPerPage = 10;
-  const lastIndex = currentPage * recordsPerPage;
-  const firstIndex = lastIndex - recordsPerPage;
-  const records = orderList.slice(firstIndex, lastIndex);
-  const lastPage = Math.ceil(orderList.length / recordsPerPage);
-  const numbers = [...Array(lastPage + 1).keys()].slice(1);
-
-  function prePage() {
-    if (currentPage !== 1) {
-      setCurrentPage(currentPage - 1);
-    }
-  }
-
-  function changePage(id) {
-    setCurrentPage(id);
-  }
-
-  function nextPage() {
-    if (currentPage !== lastPage) {
-      setCurrentPage(currentPage + 1);
-    }
-  }
-
+function Order({ records }) {
   return (
     <>
       <tbody>
@@ -47,27 +20,6 @@ function Order() {
           </tr>
         ))}
       </tbody>
-      <div className="mt-3 mb-12 ">
-        <ul className="flex">
-          <li>
-            <NavLink to="" onClick={() => prePage()}>
-              Prev
-            </NavLink>
-          </li>
-          {numbers.map((number, i) => (
-            <li key={i}>
-              <NavLink to="" onClick={() => changePage(number)}>
-                {number}
-              </NavLink>
-            </li>
-          ))}
-          <li>
-            <NavLink to="" onClick={() => nextPage()}>
-              Next
-            </NavLink>
-          </li>
-        </ul>
-      </div>
     </>
   );
 }
