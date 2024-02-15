@@ -31,6 +31,7 @@ function Orders() {
   return (
     <>
       <div className="overflow-x-auto">
+        <h1 className="ml-4 text-xl font-semibold">Order List</h1>
         <table className="w-full text-sm lg:text-lg ">
           <thead>
             <tr className="border-b-2 border-[#E6EDFF]">
