@@ -1,4 +1,5 @@
 function Product() {
+
   return (
     <div>
       <h1 className="text-lg font-semibold mb-4 ml-4 pl-3">Products</h1>
@@ -42,7 +43,7 @@ function Product() {
           </div>
         </div>
       </header>
-      <main className="main-product mx-20 bg-red-700">asdf</main>
+      <main className="main-product mx-20 bg-red-700"></main>
     </div>
   );
 }
