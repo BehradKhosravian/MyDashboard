@@ -43,7 +43,7 @@ function Product() {
           </div>
         </div>
       </header>
-      <main className="main-product mx-20 mt-10 border border-gray-300 rounded-md px-3">
+      <main className="main-product bg-gray-100 mx-20 mt-10 border border-gray-300 rounded-md px-3 mb-10">
         <ProductList />
       </main>
     </div>
