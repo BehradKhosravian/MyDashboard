@@ -1,20 +1,14 @@
-import { useEffect } from "react";
-
-function ProductCards() {
-  useEffect(function () {
-    async function productAPI() {
-      let data;
-      try {
-        const res = await fetch("https://dummyjson.com/products");
-        data = await res.json();
-        console.log(data);
-      } catch (err) {
-        console.error(err);
-      }
-    }
-    productAPI();
-  }, []);
-  return <></>;
+function ProductCards({ title, key, price, category, image }) {
+  return (
+    <>
+      <div className="">
+        <h1>{title}</h1>
+        <img className="w-4/12 h-full" src={image} alt="image" />
+        <span>{price}$</span>
+        <span>Category:{category}</span>
+      </div>
+    </>
+  );
 }
 
 export default ProductCards;

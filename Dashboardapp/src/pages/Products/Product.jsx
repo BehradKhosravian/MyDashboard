@@ -1,5 +1,6 @@
-function Product() {
+import ProductList from "../../components/Product/ProductList";
 
+function Product() {
   return (
     <div>
       <h1 className="text-lg font-semibold mb-4 ml-4 pl-3">Products</h1>
@@ -21,9 +22,9 @@ function Product() {
               <option className="" value="" selected disabled hidden>
                 Category
               </option>
-              <option value="clothes">clothes</option>
-              <option value="digital">digital</option>
-              <option value="furniture">furniture</option>
+              <option value="clothes">Clothes</option>
+              <option value="digital">Digital</option>
+              <option value="furniture">Furniture</option>
             </select>
           </div>
           <div>
@@ -36,14 +37,15 @@ function Product() {
               <option className="" value="" selected disabled hidden>
                 Sorted By
               </option>
-              <option value="clothes">clothes</option>
-              <option value="digital">digital</option>
-              <option value="furniture">furniture</option>
+              <option value="clothes">Price(increase)</option>
+              <option value="digital">Time</option>
             </select>
           </div>
         </div>
       </header>
-      <main className="main-product mx-20 bg-red-700"></main>
+      <main className="main-product mx-20 mt-10 border border-gray-300 rounded-md px-3">
+        <ProductList />
+      </main>
     </div>
   );
 }
