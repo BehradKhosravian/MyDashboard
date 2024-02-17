@@ -12,7 +12,7 @@ function ProductCards({ title, key, price, category, image }) {
           <p className="text-sm">Category: {category}</p>
           <p>Price: ${price}.00</p>
         </div>
-        <div className="flex justify-around mt-2">
+        <div className="flex justify-around mt-2  ">
           <button className="font-semibold p-2 flex items-center justify-center transition-all ease-in-out duration-150  border border-gray-300 hover:shadow-lg hover:font-bold rounded-lg">
             <EditOutlinedIcon />
             Edit
