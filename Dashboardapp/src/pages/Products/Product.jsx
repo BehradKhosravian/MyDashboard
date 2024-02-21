@@ -22,9 +22,15 @@ function Product() {
               <option className="" value="" selected disabled hidden>
                 Category
               </option>
-              <option value="clothes">Clothes</option>
-              <option value="digital">Digital</option>
-              <option value="furniture">Furniture</option>
+              <option className="text-start" value="clothes">
+                Laptops
+              </option>
+              <option className="text-start" value="digital">
+                Smartphones
+              </option>
+              <option className="text-start" value="furniture">
+                Fragrances
+              </option>
             </select>
           </div>
           <div>

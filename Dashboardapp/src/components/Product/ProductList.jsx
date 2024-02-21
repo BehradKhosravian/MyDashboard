@@ -40,15 +40,13 @@ function ProductList() {
           />
         ))}
       </div>
-      <div className="">
-        <ul>
-          <li>
-            {pages.map((page, index) => (
-              <button key={index} onClick={() => setCurrentPage(page)}>
-                {page}
-              </button>
-            ))}
-          </li>
+      <div className=" flex justify-center my-6">
+        <ul className="flex space-x-3">
+          {pages.map((page, index) => (
+            <li key={index}>
+              <button onClick={() => setCurrentPage(page)}>{page}</button>
+            </li>
+          ))}
         </ul>
       </div>
     </>
