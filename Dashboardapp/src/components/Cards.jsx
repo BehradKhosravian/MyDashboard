@@ -3,7 +3,7 @@ function Cards() {
   return (
     <>
       <div className=" px-6 h-fit">
-        <div className="px-5 py-4 md:border md:flex md:border-[#E6EDFF] rounded-xl h-full  space-x-10">
+        <div className="px-5 py-4 md:border md:flex md:border-[#E6EDFF] rounded-xl h-full  ">
           <Card
             number={"89,935"}
             title={"users"}

@@ -3,7 +3,7 @@ import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 function ProductCards({ title, key, price, category, image }) {
   return (
     <>
-      <div className="p-8 w-full bg-slate-50 shadow-md rounded-2xl transition duration-150 ease-in-out hover:shadow-2xl">
+      <div className="p-8 w-full bg-slate-50 shadow-md transition duration-150 ease-in-out hover:shadow-2xl">
         <img className="h-44 w-full" src={image} alt="image" />
         <div className="p-2">
           <p>
