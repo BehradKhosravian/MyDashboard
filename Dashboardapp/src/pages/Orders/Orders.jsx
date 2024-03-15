@@ -3,6 +3,7 @@ import { useState } from "react";
 import Pagination from "../../components/Pagination";
 import { orderList } from "../../Data";
 import Order from "./Order/Order";
+import TableHeader from "../../components/Table/TableHeader";
 function Orders() {
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 10;
@@ -33,7 +34,7 @@ function Orders() {
       <div className="overflow-x-auto">
         <h1 className="ml-4 text-xl font-semibold">Order List</h1>
         <table className="w-full text-sm lg:text-lg ">
-          <thead>
+          <TableHeader>
             <tr className="border-b-2 border-[#E6EDFF]">
               <th className="px-3 py-2 ">No</th>
               <th className="px-3 py-2 ">ID</th>
@@ -44,7 +45,7 @@ function Orders() {
               <th className="px-3 py-2 ">Status Order</th>
               <th className="px-3 py-2 ">Action</th>
             </tr>
-          </thead>
+          </TableHeader>
           <Order records={records} />
         </table>
       </div>
