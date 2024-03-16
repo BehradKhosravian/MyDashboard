@@ -11,28 +11,31 @@ import Contactus from "./pages/Contactus/Contactus";
 import Logout from "./pages/Logout/Logout";
 import Setting from "./pages/Setting/Setting";
 import Checkout from "./pages/CheckOut/Checkout";
-
+import { useState } from "react";
 function App() {
+  const [login, setLogin] = useState(true);
   // const router = useRoutes(routes)
   return (
     <>
-      <div className="flex">
-        <SideBar />
-        <main className=" w-full">
-          <NavigationBar userName={"Behrad Khosravian"} />
-          <Routes>
-            <Route path="/" element={<Overview />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/orders" element={<Orders />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/setting" element={<Setting />} />
-            <Route path="/helpcenter" element={<HelpCenter />} />
-            <Route path="/contactus" element={<Contactus />} />
-            <Route path="/logout" element={<Logout />} />
-            <Route path="*" element={<NoutFound />} />
-          </Routes>
-        </main>
-      </div>
+      {login && (
+        <div className="flex">
+          <SideBar />
+          <main className=" w-full">
+            <NavigationBar userName={"Behrad Khosravian"} />
+            <Routes>
+              <Route path="/" element={<Overview />} />
+              <Route path="/product" element={<Product />} />
+              <Route path="/orders" element={<Orders />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/setting" element={<Setting />} />
+              <Route path="/helpcenter" element={<HelpCenter />} />
+              <Route path="/contactus" element={<Contactus />} />
+              <Route path="/logout" element={<Logout />} />
+              <Route path="*" element={<NoutFound />} />
+            </Routes>
+          </main>
+        </div>
+      )}
     </>
   );
 }

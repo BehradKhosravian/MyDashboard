@@ -3,7 +3,7 @@ import ProductList from "../../components/Product/ProductList";
 function Product() {
   return (
     <div>
-      <h1 className="text-lg font-semibold mb-4 ml-4 pl-3">Products</h1>
+      {/* <h1 className="text-lg font-semibold mb-4 ml-10 pl-3">Products</h1> */}
       <header className="product-header mx-20 p-4 flex justify-between items-center bg-[#F7F7F7]">
         <input
           className="w-3/12 pl-3 py-1 focus-visible:outline-none 

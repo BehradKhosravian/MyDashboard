@@ -42,7 +42,7 @@ function EarningPieChart() {
   }
 
   return (
-    <div className="mx-6 w-1/2  mt-10 md:w-3/12 h-fit border  border-[#E6EDFF] rounded-xl">
+    <div className="mx-6 mb-10 w-screen  mt-10 md:w-3/12 h-fit border  border-[#E6EDFF] rounded-xl">
       {/* header of earning Chart */}
       <div className="earning-header p-4 flex justify-between relative">
         <p className="font-semibold text-xl">Earnings</p>

@@ -27,7 +27,7 @@ function ProductList() {
     }
     productAPI();
   }, []);
-  
+
   return (
     <>
       <div className="my-4 bg-gray-100 md:grid md:grid-cols-2 md:gap-10 lg:grid lg:grid-cols-3 lg:gap-10 xl:grid xl:grid-cols-4 xl:gap-4">
