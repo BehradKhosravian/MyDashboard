@@ -10,10 +10,10 @@ function Card({ number, title, amount, percentage }) {
   return (
     <>
       <div
-        className={`w-full ml-10 md:w-1/4 ${
+        className={`w-full mt-4 ml-10 md:w-1/4 ${
           title === "Refunded"
             ? ""
-            : "border-b md:border-r md:border-b-0  border-[#E6EDFF]"
+            : "border-b md:border-r md:border-b-0  md:border-[#E6EDFF]"
         }`}
       >
         <div className="main-report flex  justify-between">

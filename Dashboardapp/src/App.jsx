@@ -11,15 +11,21 @@ import Contactus from "./pages/Contactus/Contactus";
 import Logout from "./pages/Logout/Logout";
 import Setting from "./pages/Setting/Setting";
 import Checkout from "./pages/CheckOut/Checkout";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 import { useState } from "react";
 function App() {
   const [login, setLogin] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   // const router = useRoutes(routes)
   return (
     <>
       {login && (
         <div className="flex">
-          <SideBar />
+          {isOpen ? <SideBar isOpen={isOpen} /> : null}
+          <div className="text-3xl z-20 position fixed left-2">
+            <GiHamburgerMenu onClick={() => setIsOpen(!isOpen)} />
+          </div>
           <main className=" w-full">
             <NavigationBar userName={"Behrad Khosravian"} />
             <Routes>

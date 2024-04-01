@@ -44,7 +44,10 @@ function ProductList() {
       <div className=" flex justify-center my-6">
         <ul className="flex space-x-3">
           {pages.map((page, index) => (
-            <li key={index}>
+            <li
+              key={index}
+              className="border p-2 rounded-md transition-colors duration-100 hover:bg-slate-200"
+            >
               <button onClick={() => setCurrentPage(page)}>{page}</button>
             </li>
           ))}

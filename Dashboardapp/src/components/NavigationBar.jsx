@@ -12,7 +12,7 @@ function NavigationBar({ userName }) {
   return (
     <div className="flex flex-col w-full">
       <div className="header-container flex justify-between">
-        <div className="py-8 px-6">
+        <div className="py-8 ml-6">
           <h1 className=" font-semibold text-xs  lg:text-2xl 	">
             Welcome Back , {userName}
           </h1>
@@ -33,13 +33,13 @@ function NavigationBar({ userName }) {
             {!isOpen ? (
               <img
                 onClick={() => handleUserShape()}
-                className=" size-2"
+                className=" size-2 absolute top-10 right-0"
                 src={shapeIcon}
               />
             ) : (
               <img
                 onClick={() => handleUserShape()}
-                className=" size-2 rotate-180"
+                className=" size-2 rotate-180 absolute top-10 right-0"
                 src={shapeIcon}
               />
             )}

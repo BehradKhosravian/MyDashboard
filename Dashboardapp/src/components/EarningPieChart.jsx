@@ -42,7 +42,7 @@ function EarningPieChart() {
   }
 
   return (
-    <div className="mx-6 mb-10 w-screen  mt-10 md:w-3/12 h-fit border  border-[#E6EDFF] rounded-xl">
+    <div className="lg:mx-6   mb-10 w-screen  mt-10 md:w-4/12 lg:w-3/12 h-fit border  border-[#E6EDFF] rounded-xl">
       {/* header of earning Chart */}
       <div className="earning-header p-4 flex justify-between relative">
         <p className="font-semibold text-xl">Earnings</p>
@@ -59,7 +59,7 @@ function EarningPieChart() {
           type="radialBar"
           height={300}
         />
-        <img className="pt-4" src={legend} alt="" />
+        <img className="py-4 lg:p-2" src={legend} alt="" />
       </div>
     </div>
   );

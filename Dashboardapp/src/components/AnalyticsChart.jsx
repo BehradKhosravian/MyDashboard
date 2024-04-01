@@ -46,13 +46,13 @@ function AnalyticsChart() {
   });
 
   return (
-    <div className="mx-0  mt-10  w-fit md:w-9/12 md:mx-6">
+    <div className="mx-0  mt-10  w-fit md:w-8/12 md:mx-6">
       <div className="px-0 md:px-5 text h-fit py-4 border  border-[#E6EDFF] rounded-xl">
         <div className="analytics-header flex justify-between">
           <p className="font-semibold text-sm text-nowrap  md:text-xl">
             Orders Analytics
           </p>
-          <div className="flex space-x-14 ">
+          <div className="flex md:space-x-14 ">
             <p>Offline orders</p>
             <p>Online orders </p>
             <select className="rounded-md shadow-md md:p-1 text-center focus-visible:outline-none">

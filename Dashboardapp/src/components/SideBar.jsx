@@ -10,12 +10,12 @@ import settingAside from "../assets/icon/settingAside.svg";
 import helpCenterIcon from "../assets/icon/helpCenterIcon.svg";
 import contactUsIcon from "../assets/icon/contactUsIcon.svg";
 import logOutIcon from "../assets/icon/logOutIcon.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 function SideBar() {
   return (
     <>
-      <section className="sideBar-container   flex-col  w-1/6 h-full hidden lg:block">
-        <div className="fixed">
+      <section className="sideBar-container  bg-slate-50 flex-col  w-1/6 h-full lg:block">
+        <div className="fixed bg-slate-50 h-screen z-10">
           <div className="sideBar-logo flex px-12 py-7 mt-2 items-center">
             <img src={logo} alt="MyDashLogo" />
             <span className="font-semibold">MyDash</span>
@@ -44,30 +44,30 @@ function SideBar() {
                 <img className="mr-3" src={ordersIconAside} alt="" />
                 Orders
               </NavLink>
-              <NavLink
-                to="/checkout"
+              <Link
+                // to="/checkout"
                 className="text-[#7C8DB5]  flex  font-semibold hover:text-[#347AE2]"
               >
                 <img className="mr-3" src={checkoutAside} alt="" />
                 Checkout
-              </NavLink>
-              <NavLink
-                to="/setting"
+              </Link>
+              <Link
+                // to="/setting"
                 className="text-[#7C8DB5]  flex  font-semibold hover:text-[#347AE2]"
               >
                 <img className="mr-3" src={settingAside} alt="" />
                 Setting
-              </NavLink>
+              </Link>
             </div>
           </div>
-          <div className="sideBar-footer pt-48 pb-10 px-12  border-r  space-y-5">
-            <NavLink
-              to="/helpcenter"
+          <div className="sideBar-footer  bg-slate-50 pt-48 pb-10 px-12  border-r  space-y-5">
+            <Link
+              // to="/helpcenter"
               className="text-[#7C8DB5] flex  font-semibold hover:text-[#347AE2]"
             >
               <img className="mr-3" src={helpCenterIcon} alt="helpCenterIcon" />
               Help Center
-            </NavLink>
+            </Link>
             <NavLink
               to="/contactus"
               className="text-[#7C8DB5] flex  font-semibold hover:text-[#347AE2]"
